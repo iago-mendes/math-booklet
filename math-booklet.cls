@@ -23,3 +23,13 @@
 	\sethead[\thepage][][\chaptertitle]{\thesection~\sectiontitle}{}{\thepage}
 }
 \pagestyle{mystyle}
+
+\renewenvironment{equation}
+{
+	\begin{equation*}
+	\begin{gathered}
+}
+{           
+	\end{gathered}
+	\end{equation*}
+}
