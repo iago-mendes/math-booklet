@@ -1,1 +1,64 @@
 \section{Analytic Geometry}
+
+\subsection{Coordinate systems}
+	\begin{itemize}
+		\item Cartesian coordinates ($\mathbb{R}^2$ and $\mathbb{R}^3$)
+		\item Polar coordinates ($\mathbb{R}^2$)
+			\begin{equation}
+				(r, \theta)
+			\end{equation}
+			\begin{itemize}
+				\item Polar/rectangular conversions
+					\begin{equation}
+						\begin{cases}
+							x = r \cos \theta \\
+							y = r \sin \theta
+						\end{cases} \qquad \begin{cases}
+							r^2 = x^2 + y^2 \\
+							\tan \theta = \frac{y}{x}
+						\end{cases}
+					\end{equation}
+			\end{itemize}
+		\item Cylindrical coordinates ($\mathbb{R}^3$)
+			\begin{equation}
+				(r, \theta, z)
+			\end{equation}
+			\begin{itemize}
+				\item Cylindrical/rectangular conversions
+					\begin{equation}
+						\begin{cases}
+							x = r \cos \theta \\
+							y = r \sin \theta \\
+							z = z
+						\end{cases} \qquad \begin{cases}
+							r^2 = x^2 + y^2 \\
+							\tan \theta = \frac{y}{x} \\
+							z = z
+						\end{cases}
+					\end{equation}
+			\end{itemize}
+		\item Spherical coordinates ($\mathbb{R}^3$)
+			\begin{equation}
+				(\rho, \phi, \theta)
+			\end{equation}
+			\begin{itemize}
+				\item Typical restrictions
+					\begin{equation}
+						\rho \geq 0 \\
+						0 \leq \phi \leq \pi \\
+						0 \leq \theta \leq 2 \pi
+					\end{equation}
+				\item Spherical/cylindrical conversions
+					\begin{equation}
+						\begin{cases}
+							r = \rho \sin \phi \\
+							\theta = \theta \\
+							z = \rho \cos \phi
+						\end{cases} \qquad \begin{cases}
+							\rho^2 = r^2 + z^2 \\
+							\tan \phi = \frac{r}{z} \\
+							\theta = \theta
+						\end{cases}
+					\end{equation}
+			\end{itemize}
+	\end{itemize}
