@@ -3,11 +3,19 @@
 \subsection{Coordinate systems}
 	\begin{itemize}
 		\item Cartesian coordinates ($\mathbb{R}^2$ and $\mathbb{R}^3$)
+			\begin{equation}
+				(x,y) \qquad (x,y,z)
+			\end{equation}
 		\item Polar coordinates ($\mathbb{R}^2$)
 			\begin{equation}
 				(r, \theta)
 			\end{equation}
 			\begin{itemize}
+				\item Typical restrictions
+					\begin{equation}
+						r \geq 0 \\
+						0 \leq \theta \leq 2 \pi
+					\end{equation}
 				\item Polar/rectangular conversions
 					\begin{equation}
 						\begin{cases}
@@ -24,6 +32,11 @@
 				(r, \theta, z)
 			\end{equation}
 			\begin{itemize}
+				\item Typical restrictions
+					\begin{equation}
+						r \geq 0 \\
+						0 \leq \theta \leq 2 \pi
+					\end{equation}
 				\item Cylindrical/rectangular conversions
 					\begin{equation}
 						\begin{cases}
@@ -58,6 +71,18 @@
 							\rho^2 = r^2 + z^2 \\
 							\tan \phi = \frac{r}{z} \\
 							\theta = \theta
+						\end{cases}
+					\end{equation}
+				\item Spherical/rectangular conversions
+					\begin{equation}
+						\begin{cases}
+							x = \rho \sin \phi \cos \theta \\
+							y = \rho \sin \phi \sin \theta \\
+							z = \rho \cos \phi
+						\end{cases} \qquad \begin{cases}
+							\rho^2 = x^2 + y^2 + z^2 \\
+							\tan \phi = \frac{\sqrt{x^2+y^2}}{z} \\
+							\tan \theta = \frac{y}{x}
 						\end{cases}
 					\end{equation}
 			\end{itemize}
