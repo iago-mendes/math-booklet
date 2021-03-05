@@ -33,3 +33,42 @@
 	\end{gathered}
 	\end{equation*}
 }
+
+% basic notations
+
+\renewcommand{\t} % times
+{
+	\cdot
+}
+
+% vector notations
+
+\renewcommand{\vector}[1] % vector
+{
+	\overrightarrow{#1}
+}
+
+\newcommand{\vectorMagnitude}[1] % vector magnitude
+{
+	\left|\left|\overrightarrow{#1}\right|\right|
+}
+
+\newcommand{\magnitude}[1] % vector magnitude (no arrow)
+{
+	\left|\left|#1\right|\right|
+}
+
+\newcommand{\vectorUnit}[1] % vector unit
+{
+	\hat{#1}
+}
+
+\renewcommand{\dot} % dot product
+{
+	\bullet
+}
+
+\newcommand{\cross} % cross product
+{
+	\times
+}
