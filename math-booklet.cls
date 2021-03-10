@@ -45,12 +45,14 @@
 
 \renewcommand{\vector}[1] % vector
 {
-	\overrightarrow{#1}
+	% \overrightarrow{#1}
+	\textbf{#1}
 }
 
 \newcommand{\vectorMagnitude}[1] % vector magnitude
 {
 	\left|\left|\overrightarrow{#1}\right|\right|
+	\left|\left|\textbf{#1}\right|\right|
 }
 
 \newcommand{\magnitude}[1] % vector magnitude (no arrow)
@@ -71,4 +73,21 @@
 \newcommand{\cross} % cross product
 {
 	\times
+}
+
+% calculus notations
+
+\newcommand{\tends}
+{
+	\rightarrow
+}
+
+\newcommand{\partialDerivative}[2]
+{
+	\frac{\partial #1}{\partial #2}
+}
+
+\newcommand{\gradient}
+{
+	\nabla
 }

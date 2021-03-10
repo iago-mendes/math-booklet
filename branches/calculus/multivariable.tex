@@ -13,3 +13,31 @@
 			$\delta > 0$ \\
 			$\varepsilon > 0$
 	\end{itemize}
+\subsection{Partial Derivatives}
+	\begin{equation}
+		\partialDerivative{f}{x_i} = \lim_{h \rightarrow 0} \frac{f(x_1, ..., x_i + h, ..., x_n) - f(x_1, ..., x_n)}{h}
+	\end{equation}
+	\begin{itemize}
+		\item Gradient
+			\begin{equation}
+				\gradient f(\vector{a}) = (f_{x_1}(\vector{a}), ..., f_{x_n}(\vector{a}))
+			\end{equation}
+		\item Tangent plane
+			\begin{equation}
+				z = h(x, y) = f(a,b) + f_x(a,b) (x-a) + f_y(a,b) (y-b) \\
+				h(\vector{x}) = f(\vector{a}) + f_{x_1}(\vector{a}) (x_1-a_1) + ... + f_{x_n}(\vector{a}) (x_n-a_n)
+			\end{equation}
+			\begin{itemize}
+				\item Normal vector
+					\begin{equation}
+						\vector{n} = -f_x(a,b) \vectorUnit{i} -f_y(a,b) \vectorUnit{j} + \vectorUnit{k} = (-f_x(a,b), -f_y(a,b), 1)
+					\end{equation}
+			\end{itemize}
+		\item Differentiability
+			\begin{enumerate}
+				\item All partial derivatives exist
+				\item \begin{equation}
+					\lim_{\vector{x} \tends \vector{a}} \frac{f(\vector{x}) - h(\vector{x})}{\magnitude{\vector{x} - \vector{a}}} = 0
+				\end{equation}
+			\end{enumerate}
+	\end{itemize}
