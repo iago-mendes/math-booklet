@@ -82,6 +82,11 @@
 	\rightarrow
 }
 
+\newcommand{\derivative}[2]
+{
+	\frac{d #1}{d #2}
+}
+
 \newcommand{\partialDerivative}[2]
 {
 	\frac{\partial #1}{\partial #2}

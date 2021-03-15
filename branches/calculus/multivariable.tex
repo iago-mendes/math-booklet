@@ -1,7 +1,9 @@
 \section{Multivariable Calculus}
 
+$\vector{f}: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$ \\
+$f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
+
 \subsection{Limits}
-	$\vector{f}: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m $
 	\begin{equation}
 		\lim_{\vector{x} \rightarrow \vector{a}} \vector{f} (\vector{x}) = \vector{L}
 	\end{equation}
@@ -22,22 +24,34 @@
 			\begin{equation}
 				\gradient f(\vector{a}) = (f_{x_1}(\vector{a}), ..., f_{x_n}(\vector{a}))
 			\end{equation}
+		\item Derivative matrix
+			\begin{equation}
+				D\vector{f}(\vector{a}) = 
+			\end{equation}
 		\item Tangent plane
 			\begin{equation}
 				z = h(x, y) = f(a,b) + f_x(a,b) (x-a) + f_y(a,b) (y-b) \\
-				h(\vector{x}) = f(\vector{a}) + f_{x_1}(\vector{a}) (x_1-a_1) + ... + f_{x_n}(\vector{a}) (x_n-a_n)
 			\end{equation}
 			\begin{itemize}
 				\item Normal vector
 					\begin{equation}
 						\vector{n} = -f_x(a,b) \vectorUnit{i} -f_y(a,b) \vectorUnit{j} + \vectorUnit{k} = (-f_x(a,b), -f_y(a,b), 1)
 					\end{equation}
+				\item
+					\begin{equation}
+							\vector{h}(\vector{x}) = \vector{f}(\vector{a}) + D\vector{f}(\vector{a}) (\vector{x} - \vector{a})
+					\end{equation}
 			\end{itemize}
 		\item Differentiability
 			\begin{enumerate}
-				\item All partial derivatives exist
+				\item $D\vector{f}(\vector{a})$ exists
 				\item \begin{equation}
-					\lim_{\vector{x} \tends \vector{a}} \frac{f(\vector{x}) - h(\vector{x})}{\magnitude{\vector{x} - \vector{a}}} = 0
+					\lim_{\vector{x} \tends \vector{a}} \frac{\vector{f}(\vector{x}) - \vector{h}(\vector{x})}{\magnitude{\vector{x} - \vector{a}}} = 0
 				\end{equation}
 			\end{enumerate}
+		\item Chain rule
+			\begin{equation}
+				\derivative{f}{t} = \gradient f(\vector{x}) \dot \vector{x}'(t)
+			\end{equation}
 	\end{itemize}
+\subsection{Higher-order Partial Derivatives}
