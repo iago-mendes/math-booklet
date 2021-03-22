@@ -62,7 +62,7 @@
 
 \newcommand{\vectorUnit}[1] % vector unit
 {
-	\hat{#1}
+	\hat{\textbf{#1}}
 }
 
 \renewcommand{\dot} % dot product
@@ -89,7 +89,8 @@
 
 \newcommand{\partialDerivative}[2]
 {
-	\frac{\partial #1}{\partial #2}
+	\dfrac{\strut \partial #1}{\strut \partial #2}
+	% \fraction{\partial #1}{\partial #2}
 }
 
 \newcommand{\gradient}
