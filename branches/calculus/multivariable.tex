@@ -61,10 +61,46 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 		\item Chain rule
 			\begin{equation}
 				D(\vector{f} \circ \vector{x})(\vector{t}_0) = D\vector{f}(\vector{x}_0) D\vector{x}(\vector{t}_0) \\
-				(f \circ \vector{x})'(\vector{t}_0) = \gradient f(\vector{x}) \dot \vector{x}'(t)
+				(f \circ \vector{x})'(\vector{t}_0) = \gradient f(\vector{x}) \dotProduct \vector{x}'(t)
 			\end{equation}
 		\item Directional derivative
 			\begin{equation}
-				D_{\vectorUnit{u}} f(\vector{a}) = \gradient f(\vector{a}) \dot \vectorUnit{u} = \magnitude{\gradient f(\vector{a})} \cos \theta
+				D_{\vectorUnit{u}} f(\vector{a}) = \gradient f(\vector{a}) \dotProduct \vectorUnit{u} = \magnitude{\gradient f(\vector{a})} \cos \theta
 			\end{equation}
+	\end{itemize}
+\subsection{Vector-valued Functions}
+	\begin{itemize}
+		\item Arclength
+		\item Vector fields
+		\item Del operator
+			\begin{equation}
+				\nabla = \left( \partialDerivative{}{x_1} ,\; \partialDerivative{}{x_2} ,\; \dots ,\; \partialDerivative{}{x_n} \right)
+			\end{equation}
+		\item Gradient
+			\begin{equation}
+				\nabla f = \left( \partialDerivative{f}{x_1} ,\; \partialDerivative{f}{x_2} ,\; \dots ,\; \partialDerivative{f}{x_n} \right)
+			\end{equation}
+		\item Divergence
+			\begin{equation}
+				\nabla \dotProduct \vector{F} = \partialDerivative{f}{x_1} + \partialDerivative{f}{x_2} + \dots + \partialDerivative{f}{x_n}
+			\end{equation}
+		\item Curl
+			\begin{equation}
+				\nabla \crossProduct \vector{F} = \begin{vmatrix}
+					\vectorUnit{i}          & \vectorUnit{j}          & \vectorUnit{k}          \\
+					\partialDerivative{}{x} & \partialDerivative{}{y} & \partialDerivative{}{z} \\
+					F_1                     & F_2                     & F_3
+				\end{vmatrix}
+			\end{equation}
+		\item Theorems
+			\begin{enumerate}
+				\item If $f$ is a scalar-valued function of class $C^2$, then
+					\begin{equation}
+						\nabla \crossProduct (\nabla f) = \vector{0}
+					\end{equation}
+				\item If $\vector{F}$ is a vector-valued function of class $C^2$ on $X \subseteq \mathbb{R}^3$, then
+					\begin{equation}
+						\nabla \dotProduct (\nabla \crossProduct \vector{F}) = 0
+					\end{equation}
+			\end{enumerate}
 	\end{itemize}

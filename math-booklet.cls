@@ -65,12 +65,12 @@
 	\hat{\textbf{#1}}
 }
 
-\renewcommand{\dot} % dot product
+\newcommand{\dotProduct} % dot product
 {
 	\bullet
 }
 
-\newcommand{\cross} % cross product
+\newcommand{\crossProduct} % cross product
 {
 	\times
 }
