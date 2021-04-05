@@ -107,18 +107,22 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 \subsection{Maxima and Minima}
 	\begin{itemize}
 		\item Taylor Polynomials
-			% 11:02
 			\begin{itemize}
 				\item First-order
 					\begin{equation}
 						p_1(\vector{x}) = f(\vector{a}) + \sum_{i=1}^n f_{x_i}(\vector{a}) (x_i - a_i) \\
-						p_1(\vector{x}) = f(\vector{a}) + Df(\vector{a}) (\vector{x}) - \vector{a})
+						p_1(\vector{x}) = f(\vector{a}) + Df(\vector{a}) (\vector{x} - \vector{a})
 					\end{equation}
 				\item Second-order
 					\begin{equation}
-						p_2(\vector{x}) = f(\vector{a}) + \sum_{i=1}^n f_{x_i}(\vector{a}) (x_i - a_i) + \frac{1}{2} \sum_{i,j=1}^n f_{x_ix_j}(\vector{a}) (x_i - a_i)(x_j - a_j)
+						p_2(\vector{x}) = f(\vector{a}) + \sum_{i=1}^n f_{x_i}(\vector{a}) (x_i - a_i) + \frac{1}{2} \sum_{i,j=1}^n f_{x_ix_j}(\vector{a}) (x_i - a_i)(x_j - a_j) \\
+						p_2(\vector{x}) = f(\vector{a}) + Df(\vector{a}) (\vector{x} - \vector{a}) + \frac{1}{2} (\vector{x} - \vector{a})^T Hf(\vector{a}) (\vector{x} - \vector{a})
 					\end{equation}
 			\end{itemize}
+		\item Differential
+			\begin{equation}
+				df = \partialDerivative{f}{x_1}dx_1 + \dots + \partialDerivative{f}{x_n}dx_n
+			\end{equation}
 		\item Hessian Criterion
 			\begin{itemize}
 				\item Hessian matrix
