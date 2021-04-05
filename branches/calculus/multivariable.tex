@@ -104,3 +104,39 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 					\end{equation}
 			\end{enumerate}
 	\end{itemize}
+\subsection{Maxima and Minima}
+	\begin{itemize}
+		\item Taylor Polynomials
+			% 11:02
+			\begin{itemize}
+				\item First-order
+					\begin{equation}
+						p_1(\vector{x}) = f(\vector{a}) + \sum_{i=1}^n f_{x_i}(\vector{a}) (x_i - a_i) \\
+						p_1(\vector{x}) = f(\vector{a}) + Df(\vector{a}) (\vector{x}) - \vector{a})
+					\end{equation}
+				\item Second-order
+					\begin{equation}
+						p_2(\vector{x}) = f(\vector{a}) + \sum_{i=1}^n f_{x_i}(\vector{a}) (x_i - a_i) + \frac{1}{2} \sum_{i,j=1}^n f_{x_ix_j}(\vector{a}) (x_i - a_i)(x_j - a_j)
+					\end{equation}
+			\end{itemize}
+		\item Hessian Criterion
+			\begin{itemize}
+				\item Hessian matrix
+					\begin{equation}
+						Hf(\vector{a}) = \begin{bmatrix}
+							f_{x_1x_1(\vector{a})} & \dots  & f_{x_1x_n(\vector{a})} \\
+							\vdots                 & \ddots & \vdots                 \\
+							f_{x_nx_1(\vector{a})} & \dots  & f_{x_nx_n(\vector{a})} \\
+						\end{bmatrix}
+					\end{equation}
+				\item Principal minor
+					\begin{equation}
+						d_k = \textrm{determinant of  the upperleftmost } k \times k \textrm{ submatrix of } Hf(\vector{a})
+					\end{equation}
+			\end{itemize}
+			\begin{enumerate}
+				\item If all $d_k > 0$, then the critical point $\vector{a}$ gives a local minimum.
+				\item If $d_1 < 0 ,\; d_2 > 0 ,\; d_3 < 0 ,\; \dots$, then the critical point $\vector{a}$ gives a local maximum.
+				\item If neither case 1 nor case 2 occurs, then $\vector{a}$ is a saddle point.
+			\end{enumerate}
+	\end{itemize}
