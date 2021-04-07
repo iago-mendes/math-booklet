@@ -61,7 +61,7 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 		\item Chain rule
 			\begin{equation}
 				D(\vector{f} \circ \vector{x})(\vector{t}_0) = D\vector{f}(\vector{x}_0) D\vector{x}(\vector{t}_0) \\
-				(f \circ \vector{x})'(\vector{t}_0) = \gradient f(\vector{x}) \dotProduct \vector{x}'(t)
+				f'(\vector{x}(t)) = \gradient f(\vector{x}) \dotProduct \vector{x}'(t)
 			\end{equation}
 		\item Directional derivative
 			\begin{equation}
@@ -143,4 +143,19 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 				\item If $d_1 < 0 ,\; d_2 > 0 ,\; d_3 < 0 ,\; \dots$, then the critical point $\vector{a}$ gives a local maximum.
 				\item If neither case 1 nor case 2 occurs, then $\vector{a}$ is a saddle point.
 			\end{enumerate}
+			If $d_n = 0$, the critical point $\vector{a}$ is degenerate and the test fails.
+		\item Extrema Value Theorem
+			\begin{center}
+				If $D$ is a compact region in $\mathbb{R}^n$ and $f: D \rightarrow R$ is continuous, then $f$ must have a (global) maximum and minimum values on $D$.
+			\end{center}
+		\item Lagrange Multiplier Theorem
+			\begin{equation}
+				\nabla f (\vector{a}) = \lambda \nabla g(\vector{a})
+			\end{equation}
+			\begin{itemize}
+				\item Constraint
+					\begin{equation}
+						S = \left\{ \vector{x} \in \mathbb{R}^n \;\middle|\; g(\vector{x}) = c \right\}
+					\end{equation}
+			\end{itemize}
 	\end{itemize}
