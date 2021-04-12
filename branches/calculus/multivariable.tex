@@ -159,3 +159,40 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 					\end{equation}
 			\end{itemize}
 	\end{itemize}
+\subsection{Double Integrals}
+	\begin{equation}
+		\iint_{R} f \; dA = \lim_{\textrm{all } \Delta x_i, \Delta y_j \rightarrow 0} \sum_{i,j = 1}^n f(\vector{c}_{ij}) \Delta x_i \Delta y_j
+	\end{equation}
+	\begin{itemize}
+		\item Fubini’s Theorem
+			\begin{equation}
+				\iint_{R} f \; dA = \int_c^d \int_a^b f(x,y) \; dxdy = \int_a^b\int_c^d f(x,y) \; dydx
+			\end{equation}
+		\item Elementary Regions
+			\begin{enumerate}
+				\item Type 1
+					\begin{itemize}
+						\item Boundaries
+							\begin{equation}
+								x=a \qquad x=b \\
+								y=\gamma(x) \qquad y=\delta(x)
+							\end{equation}
+						\item Theorem
+							\begin{equation}
+								\iint_{D} f \; dA = \int_a^b \int_{\gamma(x)}^{\delta(x)} f(x,y) \; dydx
+							\end{equation}
+					\end{itemize}
+				\item Type 2
+					\begin{itemize}
+						\item Boundaries
+							\begin{equation}
+								x=\alpha(y) \qquad x=\beta(y) \\
+								y=c \qquad y=d
+							\end{equation}
+						\item Theorem
+							\begin{equation}
+								\iint_{D} f \; dA = \int_c^d \int_{\alpha(y)}^{\beta(y)} f(x,y) \; dxdy
+							\end{equation}
+					\end{itemize}
+			\end{enumerate}
+	\end{itemize}
