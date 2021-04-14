@@ -20,7 +20,10 @@
 
 \newpagestyle{mystyle}
 {
-	\sethead[\thepage][][\chaptertitle]{\thesection~\sectiontitle}{}{\thepage}
+	\sethead{\chaptertitle}{}{\thesection~\sectiontitle}
+	\headrule
+
+	\setfoot{}{\thepage}{}
 }
 \pagestyle{mystyle}
 

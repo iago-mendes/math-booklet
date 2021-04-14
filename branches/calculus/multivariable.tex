@@ -159,17 +159,18 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 					\end{equation}
 			\end{itemize}
 	\end{itemize}
-\subsection{Double Integrals}
-	\begin{equation}
-		\iint_{R} f \; dA = \lim_{\textrm{all } \Delta x_i, \Delta y_j \rightarrow 0} \sum_{i,j = 1}^n f(\vector{c}_{ij}) \Delta x_i \Delta y_j
-	\end{equation}
+\subsection{Multiple Integration}
 	\begin{itemize}
+		\item Double Integrals
+			\begin{equation}
+				\iint_{R} f \; dA = \lim_{\textrm{all } \Delta x_i, \Delta y_j \rightarrow 0} \sum_{i,j = 1}^n f(\vector{c}_{ij}) \Delta x_i \Delta y_j
+			\end{equation}
 		\item Fubini’s Theorem
 			\begin{equation}
 				\iint_{R} f \; dA = \int_c^d \int_a^b f(x,y) \; dxdy = \int_a^b\int_c^d f(x,y) \; dydx
 			\end{equation}
 		\item Elementary Regions
-			\begin{enumerate}
+			\begin{itemize}
 				\item Type 1
 					\begin{itemize}
 						\item Boundaries
@@ -194,5 +195,9 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 								\iint_{D} f \; dA = \int_c^d \int_{\alpha(y)}^{\beta(y)} f(x,y) \; dxdy
 							\end{equation}
 					\end{itemize}
-			\end{enumerate}
+				\item Type 3
+					\begin{center}
+						Both type 1 and type 2.
+					\end{center}
+			\end{itemize}
 	\end{itemize}
