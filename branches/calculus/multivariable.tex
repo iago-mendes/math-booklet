@@ -165,11 +165,11 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 			\begin{equation}
 				\iint_{R} f \; dA = \lim_{\textrm{all } \Delta x_i, \Delta y_j \rightarrow 0} \sum_{i,j = 1}^n f(\vector{c}_{ij}) \Delta x_i \Delta y_j
 			\end{equation}
-		\item Fubini’s Theorem
+		\item Fubini’s Theorem $(\mathbb{R}^2)$
 			\begin{equation}
 				\iint_{R} f \; dA = \int_c^d \int_a^b f(x,y) \; dxdy = \int_a^b\int_c^d f(x,y) \; dydx
 			\end{equation}
-		\item Elementary Regions
+		\item Elementary Regions $(\mathbb{R}^2)$
 			\begin{itemize}
 				\item Type 1
 					\begin{itemize}
@@ -197,7 +197,55 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 					\end{itemize}
 				\item Type 3
 					\begin{center}
-						Both type 1 and type 2.
+						Simultaneously of type 1 and type 2.
+					\end{center}
+			\end{itemize}
+		\item Triple Integrals
+			\begin{equation}
+				\iiint_{B} f \; dV = \lim_{\textrm{all } \Delta x_i, \Delta y_j, \Delta z_k \rightarrow 0} \sum_{i,j, k = 1}^n f(\vector{c}_{ijk}) \Delta x_i \Delta y_j \Delta z_k
+			\end{equation}
+		\item Fubini’s Theorem $(\mathbb{R}^3)$
+			\begin{equation}
+				\iiint_{B} f \; dV = \int_a^b\int_c^d \int_p^q f(x,y,z) \; dzdydx = \textrm{other orders}
+			\end{equation}
+		\item Elementary Regions $(\mathbb{R}^3)$
+			\begin{itemize}
+				\item Type 1
+					\begin{itemize}
+						\item Boundaries
+							\begin{equation}
+								z=\phi(x,y) \qquad z=\psi(x,y)
+							\end{equation}
+						\item Theorem
+							\begin{equation}
+								\iiint_{B} f \; dV = \iint_{\textrm{shadow}} \int_{\phi(x,y)}^{\psi(x,y)} f(x,y,z) \; dzdydx
+							\end{equation}
+					\end{itemize}
+				\item Type 2
+					\begin{itemize}
+						\item Boundaries
+							\begin{equation}
+								x=\alpha(y,z) \qquad z=\beta(y,z)
+							\end{equation}
+						\item Theorem
+							\begin{equation}
+								\iiint_{B} f \; dV = \iint_{\textrm{shadow}} \int_{\alpha(y,z)}^{\beta(y,z)} f(x,y,z) \; dxdydz
+							\end{equation}
+					\end{itemize}
+				\item Type 3
+					\begin{itemize}
+						\item Boundaries
+							\begin{equation}
+								y=\gamma(x,z) \qquad y=\delta(x,z)
+							\end{equation}
+						\item Theorem
+							\begin{equation}
+								\iiint_{B} f \; dV = \iint_{\textrm{shadow}} \int_{\gamma(x,z)}^{\delta(x,z)} f(x,y,z) \; dydxdz
+							\end{equation}
+					\end{itemize}
+				\item Type 4
+					\begin{center}
+						Simultaneously of types 1, 2, and 3.
 					\end{center}
 			\end{itemize}
 	\end{itemize}
