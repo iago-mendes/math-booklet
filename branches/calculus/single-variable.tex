@@ -20,6 +20,104 @@
 			\end{equation}
 	\end{itemize}
 \subsection{Differentiation}
+	\begin{itemize}
+		\item Definition
+			\begin{equation}
+				f'(x)= \lim_{h \rightarrow 0} \frac{f(x+h) - f(x)}{h} \\
+				f'(a) = \lim_{x \rightarrow a} \frac{f(x)-f(a)}{x-a}
+			\end{equation}
+			\begin{itemize}
+				\item Constant function
+					\begin{equation}
+						\dfrac{d}{dx} c = 0
+					\end{equation}
+			\end{itemize}
+		\item Derivative of Transcendent Functions
+			\begin{itemize}
+				\item Sine function
+					\begin{equation}
+						\dfrac{d}{dx} \sin x = \cos x
+					\end{equation}
+				\item Cosine function
+					\begin{equation}
+						\dfrac{d}{dx} \cos x = - \sin x
+					\end{equation}
+				\item Logarithm function
+					\begin{equation}
+						\dfrac{d}{dx} \log x = \frac{1}{x}
+					\end{equation}
+				\item Exponential function
+					\begin{equation}
+						\dfrac{d}{dx} e^x = e^x
+					\end{equation}
+			\end{itemize}
+		\item Properties
+			\begin{itemize}
+				\item Sum and difference
+					\begin{equation}
+						(u+v)'=u'+v'
+					\end{equation}
+				\item Product
+					\begin{equation}
+						(u \cdot v)' = u' \cdot v + u \cdot v'
+					\end{equation}
+				\item Produc with a constant
+					\begin{equation}
+						(c \cdot u)' = c \cdot u'
+					\end{equation}
+				\item Quotient
+					\begin{equation}
+						\left( \frac{u}{v} \right) ' = \frac{u' \cdot v - u \cdot v'}{v^2}
+					\end{equation}
+					\begin{itemize}
+						\item Polynomial function
+							\begin{equation}
+								\dfrac{d}{dx} x^n = \dfrac{d}{dx} \frac{1}{x^{-n}} = n x^{n-1}
+							\end{equation}
+						\item Tangent function
+							\begin{equation}
+								\dfrac{d}{dx} \tan x = \dfrac{d}{dx} \frac{\sin x}{\cos x} = \sec^2 x
+							\end{equation}
+						\item Secant function
+							\begin{equation}
+								\dfrac{d}{dx} \sec x = \dfrac{d}{dx} \frac{1}{\cos x} = \sec x \cdot \tan x
+							\end{equation}
+					\end{itemize}
+			\end{itemize}
+		\item Chain Rule
+			\begin{equation}
+				\left[ f(g(x)) \right]' = f'(g(x)) \cdot g'(x)
+			\end{equation}
+			\begin{itemize}
+				\item Exponential function (not natural)
+					\begin{equation}
+						\dfrac{d}{dx} a^x = a^x \cdot \log a
+					\end{equation}
+				\item Logarithm of a function
+					\begin{equation}
+						\dfrac{d}{dx} \log g(x) = \frac{g'(x)}{g(x)}
+					\end{equation}
+			\end{itemize}
+		\item Derivative of The Inverse Function
+			\begin{equation}
+				\left( f^{-1} \right)' (x) = \frac{1}{f' \left( f^{-1} (x) \right)}
+			\end{equation}
+			\begin{itemize}
+				\item Arcsine function
+					\begin{equation}
+						\dfrac{d}{dx} \sin^{-1} x = \frac{1}{\sqrt{1-x^2}}
+					\end{equation}
+				\item Arctangent function
+					\begin{equation}
+						\dfrac{d}{dx} \tan^{-1} x = \frac{1}{1+x^2}
+					\end{equation}
+			\end{itemize}
+		\item Mean Value Theorem
+			\begin{equation}
+				\frac{f(b) - f(a)}{b-a} = f'(c)
+			\end{equation}
+			in which $a < c < b$
+	\end{itemize}
 \subsection{Applications of Differentiation}
 \subsection{Integration}
 \subsection{Techniques of Integration}
