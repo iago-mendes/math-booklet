@@ -327,4 +327,57 @@
 			\end{equation}
 	\end{itemize}
 \subsection{Techniques of Integration}
+	\begin{itemize}
+		\item Integration by Substitution
+			\begin{equation}
+				\int_a^b f(g(x)) \cdot g'(x) \, dx = \int_{g(a)}^{g(b)} f(t) \, dt
+			\end{equation}
+		\item Integration by Parts
+			\begin{equation}
+				\int_a^b uv' \, dx = (uv)|_a^b - \int_a^b u' v \, dx
+			\end{equation}
+		\item Trigonometric Integration
+			\begin{enumerate}
+				\item Powers - Easy case (at least one odd exponent) $\leadsto$ use the fundamental formula and substitution
+					\begin{equation}
+						\sin^2 x + \cos^2 x = 1
+					\end{equation}
+				\item Powers - Hard case (only even exponents) $\leadsto$ use half-angle formulas or other trigonometric identities
+					\begin{equation}
+						\cos^2 x = \frac{1+\cos 2x}{2} \\
+						\sin^2 x = \frac{1-\cos 2x}{2}
+					\end{equation}
+					\begin{itemize}
+						\item products $\rightarrow$ sums
+							\begin{equation}
+								2 \cdot \sin m \cdot \cos n = \sin (m+n) + \sin (m-n) \\
+								2 \cdot \cos m \cdot \cos n = \cos (m+n) + \cos (m-n) \\
+								2 \cdot \sin m \cdot \cos n = \cos (m-n) - \cos (m+n)
+							\end{equation}
+					\end{itemize}
+				\item Tangent
+					\begin{equation}
+						\int \tan x \; dx = - ln \, ( \cos x) + C
+					\end{equation}
+				\item Secant
+					\begin{equation}
+						\int \sec x \; dx = ln \, (\sec x + \tan x) + C
+					\end{equation}
+			\end{enumerate}
+		\item Summary of Trigonometric Substitutions
+			\begin{center} \begin{tabular}{|c|c|c|} \hline
+				\textbf{If integrand contains} & \textbf{make substitution} & \textbf{to get} \\ \hline
+				$\sqrt{a^2-x^2}$ & $x=a \cos \theta$ or $x=a \sin \theta$ & $a \sin \theta$ or $a \cos \theta$ \\ \hline
+				$\sqrt{a^2 +x^2}$ & $x=a \tan \theta$ & $a \sec \theta$ \\ \hline
+				$\sqrt{x^2-a^2}$ & $x=a \sec \theta$ & $a \tan \theta$ \\ \hline
+			\end{tabular} \end{center}
+		\item Partial Fractions (common cases)
+			\begin{equation}
+				\frac{p(x)}{(x-a)(x-b)} = \frac{A}{x-a} + \frac{B}{x-b} \\
+				\frac{p(x)}{(x-a)^2} = \frac{A}{x-a}+\frac{B}{(x-a)^2} \\
+				\frac{p(x)}{(x-a)^2(x-b)} = \frac{A}{x-a}+\frac{B}{(x-a)^2}+\frac{C}{x-b} \\
+				\frac{p(x)}{x^2+a} = \frac{A x + B}{x^2 + a} \\
+				\frac{p(x)}{(x^2+a)^2} = \frac{A x + B}{x^2+a} + \frac{Cx+D}{(x^2+a)^2}
+			\end{equation}
+	\end{itemize}
 \subsection{Applications of Integration}
