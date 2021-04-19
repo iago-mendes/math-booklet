@@ -381,3 +381,70 @@
 			\end{equation}
 	\end{itemize}
 \subsection{Applications of Integration}
+	\begin{itemize}
+		\item Volumes
+			\begin{enumerate}
+				\item General
+					\begin{equation}
+						V = \int A(x)dx
+					\end{equation}
+				\item Solid of Revolution (Method of Disks)
+					\begin{itemize}
+						\item Method of Disks
+							\begin{equation}
+								V = \int \pi y^2 \, dx \qquad \textrm{around x-axis}
+							\end{equation}
+						\item Method of Shells
+							\begin{equation}
+								V = \int (\textrm{circunference}) (\textrm{height}) \, dx \qquad \textrm{around y-axis}
+							\end{equation}
+					\end{itemize}
+					\begin{enumerate}
+						\item Sphere
+							\begin{equation}
+								V = \pi \left( ax^2 - \frac{x^3}{3} \right)
+							\end{equation}
+					\end{enumerate}
+			\end{enumerate}
+		\item Average Value
+			\begin{equation}
+				\frac{f(1)+f(2)+...+f(n)}{n} = \frac{\Sigma_{i=1}^n}{n} \approx \frac{1}{n} \int_0^n f(x)dx \\
+				Ave(a, b) = \frac{1}{b-a} \int_a^b f(x) dx \\
+				Ave(a,b) = \frac{\int_a^b f(x) w(x) dx}{\int_a^b w(x) dx}
+			\end{equation}
+		\item Arc-length
+			\begin{equation}
+				ds = \sqrt{1 + \left( \dfrac{dy}{dx} \right)^2} \, dx = \sqrt{1 + [f'(x)]^2} \, dx \\
+				S=\int_a^b \sqrt{1 + [f'(x)]^2} \, dx
+			\end{equation}
+		\item Superficial Area
+			\begin{equation}
+				A=\int_{s_0}^{s_n} 2 \pi y \, ds = 2 \pi \int_{x_0}^{x_n} f(x) \sqrt{1 + [f'(x)]^2} \, dx \qquad \textrm{(around x-axis)} \\
+				A=\int_{s_0}^{s_n} 2 \pi x \, ds = 2 \pi \int_{x_0}^{x_n} f(x) \sqrt{1 + [f'(x)]^2} \, dx \qquad \textrm{(around y-axis)}
+			\end{equation}
+			\begin{itemize}
+				\item Sphere
+					\begin{equation}
+						A = 2 \pi a (x_1-x_2)
+					\end{equation}
+			\end{itemize}
+		\item Numerical Integration
+			\begin{enumerate}
+				\item Riemann Sums
+					\begin{equation}
+						\int_a^b f(x) dx \approx \Delta x (y_1+y_2+...+y_n) \qquad \textrm{(right-hand sum)} \\
+						\int_a^b f(x) dx \approx \Delta x (y_0+y_1+...+y_{n-2}+y_{n-1}) \qquad \textrm{(left-hand sum)}
+					\end{equation}
+					If $f(x)$ decreases, lower estimation $=$ right-hand sum, and higher estimation $=$ left-hand sum. \\
+					If $f(x)$ increases, higher estimation $=$ right-hand sum, and lower estimation $=$ left-hand sum.
+				\item Trapezoidal Rule
+					\begin{equation}
+						\int_a^b f(x) dx \approx \Delta x \left( \frac{y_0}{2} + y_1 + ... + y_{n-1} + \frac{y_n}{2} \right)
+					\end{equation}
+				\item Simpson's Rule
+					\begin{equation}
+						\int_a^b f(x) dx \approx \frac{\Delta x}{3} (y_0+4 y_1 +2 y_2+ 4 y_3+...+4 y_{n-3}+2 y_{n-2} + 4 y_{n-1} + y_n)
+					\end{equation}
+					OBS.: $|\textrm{simpson's value} - \textrm{exact value}| \approx ( \Delta x )^2$
+			\end{enumerate}
+	\end{itemize}
