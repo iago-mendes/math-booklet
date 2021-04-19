@@ -119,6 +119,127 @@
 			in which $a < c < b$
 	\end{itemize}
 \subsection{Applications of Differentiation}
+	\begin{itemize}
+		\item L'Hospital Rule
+			\begin{equation}
+				\lim_{x \rightarrow a} \frac{f(x)}{g(x)} = \frac{\lim_{x \rightarrow a} \frac{f(x) - f(a)}{x-a}}{\lim_{x \rightarrow a} \frac{g(x) - g(a)}{x-a}} = \lim_{x \rightarrow a} \frac{f'(a)}{g'(a)}
+			\end{equation}
+			Cases: $\frac{0}{0}$ and $\frac{\infty}{\infty}$
+		\item Infinity Hierarchy
+			\begin{equation}
+				 \log x < \sqrt[n]{x} < \sqrt{x} < x < x^2 < x^n < e^x < x! < x^x \rightarrow \infty
+			\end{equation}
+		\item Curve Sketching
+			\begin{equation}
+				f'>0 \Rightarrow f \textrm{ is increasing} \\
+				f'<0 \Rightarrow f \textrm{ is decreasing} \\
+				f''>0 \Rightarrow f' \textrm{ is increasing} \Rightarrow f \textrm{ is concave up} \\
+				f''<0 \Rightarrow f' \textrm{ is decreasing} \Rightarrow f \textrm{ is concave down}
+			\end{equation}
+			\begin{itemize}
+				\item General Strategy
+					\begin{enumerate}
+					
+						\item Plot discontinuities (especially infinite), endpoints (or $x \rightarrow \pm \infty$), and easy points (optional);
+						\item Solve $f'(x)=0$, and plot critical points and values;
+						\item Decide whether $f'>0$ or $f'<0$ on each interval between critical points;
+						\item Analyse when the curve is concave up ($f'' > 0$) or down ($f'' < 0$), and what is/are the inflection point(s) ($f''(x_0) = 0$); and
+						\item Combine everything.
+					\end{enumerate}
+			\end{itemize}
+		\item Linear Approximation
+			\begin{equation}
+				f(x) \approx f(a) + f'(a) \cdot (x-a) \qquad (x \approx a)
+			\end{equation}
+			\begin{enumerate}
+				\item Sine
+					\begin{equation}
+						\sin x \approx x \qquad (x \approx 0)
+					\end{equation}
+				\item Cosine
+					\begin{equation}
+						\cos x \approx 1 \qquad (x \approx 0)
+					\end{equation}
+				\item Exponential
+					\begin{equation}
+						e^x \approx 1+x \qquad (x \approx 0)
+					\end{equation}
+				\item Logarithm
+					\begin{equation}
+						\log(1+x) \approx x \qquad (x \approx 0)
+					\end{equation}
+				\item Sum to the power of $n$
+					\begin{equation}
+						(1+x)^n \approx 1+n \cdot x \qquad (x \approx 0)
+					\end{equation}
+			\end{enumerate}
+		\item Quadratic Approximation
+			\begin{equation}
+				f(x) \approx f(a) + f'(a) \cdot (x-a) + \frac{f''(a)}{2} \cdot (x-a)^2 \qquad (x \approx a)
+			\end{equation}
+			\begin{enumerate}
+				\item Sine
+					\begin{equation}
+						\sin x \approx x \qquad (x \approx 0)
+					\end{equation}
+				\item Cosine
+					\begin{equation}
+						\cos x \approx 1 - \frac{x^2}{2} \qquad (x \approx 0)
+					\end{equation}
+				\item Exponential
+					\begin{equation}
+						e^x \approx 1+x+\frac{x^2}{2} \qquad (x \approx 0)
+					\end{equation}
+				\item Logarithm
+					\begin{equation}
+						\log(1+x) \approx x - \frac{x^2}{2} \qquad (x \approx 0)
+					\end{equation}
+				\item Sum to the power of $n$
+					\begin{equation}
+						(1+x)^n \approx 1+n \cdot x + \frac{n(n-1)}{2} x^2 \qquad (x \approx 0)
+					\end{equation}
+			\end{enumerate}
+		\item Taylor's Series
+			\begin{equation}
+				f(x) \approx f(a) + \sum_{n=1}^{\infty} \frac{(x-a)^n}{n!} f^{(n)}(a) \qquad (x \approx a)
+			\end{equation}
+			\begin{enumerate}
+				\item Sine
+					\begin{equation}
+						\sin x \approx x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ... \qquad (x \approx 0)
+					\end{equation}
+				\item Cosine
+					\begin{equation}
+						\cos x \approx 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ... \qquad (x \approx 0)
+					\end{equation}
+				\item Exponential
+					\begin{equation}
+						e^x \approx 1+x+\frac{x^2}{2!} + \frac{x^3}{3!} + ... \qquad (x \approx 0)
+					\end{equation}
+				\item Logarithm
+					\begin{equation}
+						\log(1+x) \approx x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + ... \qquad (x \approx 0)
+					\end{equation}
+					\begin{equation}
+						\log x \approx (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + ... \qquad (x \approx 1)
+					\end{equation}
+				\item Arctangent
+					\begin{equation}
+						\tan^{-1} x \approx x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + ... \qquad (x \approx 0)
+					\end{equation}
+			\end{enumerate}
+		\item Power Series
+			\begin{equation}
+				a_0 + a_1x+a_2x^2+a_3x^3+...=\sum_{n=0}^{\infty} a_nx^n
+			\end{equation}
+			OBS.: converges when $|x|<R$, where $R$ is the radius of convergence.
+			\begin{enumerate}
+				\item Geometric Series $(R=1)$
+					\begin{equation}
+						1+x+x^2+x^3+... = \frac{1}{1-x}
+					\end{equation}
+			\end{enumerate}
+	\end{itemize}
 \subsection{Integration}
 \subsection{Techniques of Integration}
 \subsection{Applications of Integration}
