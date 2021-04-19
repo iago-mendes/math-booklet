@@ -248,4 +248,17 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 						Simultaneously of types 1, 2, and 3.
 					\end{center}
 			\end{itemize}
+		\item The Jacobian \\
+			$\vector{T}: D^* \rightarrow D$ \\
+			$\vector{T}(u,v) = (x(u,v) ,\; y(u,v))$
+			\begin{equation}
+				\partialDerivative{(x,y)}{(u,v)} = \det D\vector{T}(u,v) = \begin{vmatrix}
+					\partialDerivative{x}{u} & \partialDerivative{x}{v} \\
+					\partialDerivative{y}{u} & \partialDerivative{y}{v} \\
+				\end{vmatrix}
+			\end{equation}
+		\item Change of Integration
+			\begin{equation}
+				\iint_D f(x,y) \; dxdy = \iint_{D^*} f(x(u,v) ,\; y(u,v)) \left( \partialDerivative{(x,y)}{(u,v)} \right) \; dudv
+			\end{equation}
 	\end{itemize}
