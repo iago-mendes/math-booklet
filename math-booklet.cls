@@ -44,6 +44,16 @@
 	\cdot
 }
 
+\newcommand{\qtq} % therefore
+{
+	\quad \therefore \quad
+}
+
+\newcommand{\tq} % therefore 2
+{
+	\therefore \quad
+}
+
 % vector notations
 
 \renewcommand{\vector}[1] % vector
