@@ -54,6 +54,11 @@
 	\therefore \quad
 }
 
+\newcommand{\abs}[1]
+{
+	\left| #1 \right|
+}
+
 % vector notations
 
 \renewcommand{\vector}[1] % vector

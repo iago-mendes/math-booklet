@@ -257,8 +257,32 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 					\partialDerivative{y}{u} & \partialDerivative{y}{v} \\
 				\end{vmatrix}
 			\end{equation}
+			$\vector{U}: W^* \rightarrow W$ \\
+			$\vector{U}(u,v,w) = (x(u,v,w) ,\; y(u,v,w))$
+			\begin{equation}
+				\partialDerivative{(x,y,z)}{(u,v,w)} = \det D\vector{U}(u,v,w) = \begin{vmatrix}
+					\partialDerivative{x}{u} & \partialDerivative{x}{v} & \partialDerivative{x}{w} \\
+					\partialDerivative{y}{u} & \partialDerivative{y}{v} & \partialDerivative{y}{w} \\
+					\partialDerivative{z}{u} & \partialDerivative{z}{v} & \partialDerivative{z}{w} \\
+				\end{vmatrix}
+			\end{equation}
+			\begin{itemize}
+				\item Polar coordinates
+					\begin{equation}
+						\partialDerivative{(x,y)}{(r,\theta)} = r
+					\end{equation}
+				\item Cylindrical coordinates
+					\begin{equation}
+						\partialDerivative{(x,y,z)}{(r,\theta,z)} = r
+					\end{equation}
+				\item Spherical coordinates
+					\begin{equation}
+						\partialDerivative{(x,y,z)}{(r,\phi,\theta)} = \rho^2 \sin \phi
+					\end{equation}
+			\end{itemize}
 		\item Change of Integration
 			\begin{equation}
-				\iint_D f(x,y) \; dxdy = \iint_{D^*} f(x(u,v) ,\; y(u,v)) \left( \partialDerivative{(x,y)}{(u,v)} \right) \; dudv
+				\iint_D f(x,y) \; dxdy = \iint_{D^*} f(x(u,v) ,\; y(u,v)) \abs{\partialDerivative{(x,y)}{(u,v)}} \; dudv \\
+				\iiint_W f(x,y,z) \; dxdyz = \iiint_{W^*} f(x(u,v,w) ,\; y(u,v,w)) \abs{\partialDerivative{(x,y,z)}{(u,v,w)}} \; dudvdw
 			\end{equation}
 	\end{itemize}
