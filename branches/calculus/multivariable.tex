@@ -286,3 +286,46 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 				\iiint_W f(x,y,z) \; dxdyz = \iiint_{W^*} f(x(u,v,w) ,\; y(u,v,w)) \abs{\partialDerivative{(x,y,z)}{(u,v,w)}} \; dudvdw
 			\end{equation}
 	\end{itemize}
+\subsection{Applications of Integration}
+	\begin{itemize}
+		\item Average Value
+			\begin{itemize}
+				\item $f: D \subset \mathbb{R}^2 \rightarrow \mathbb{R}$
+					\begin{equation}
+						f_{avg} = \frac{1}{A_D} \iint_D f(x,y) \; dA = \frac{\iint_D f(x,y) \; dA}{\iint_D dA}
+					\end{equation}
+				\item $f: W \subset \mathbb{R}^3 \rightarrow \mathbb{R}$
+					\begin{equation}
+						f_{avg} = \frac{1}{V_W} \iiint_W f(x,y,z) \; dV = \frac{\iiint_W f(x,y,z) \; dV}{\iiint_W dV}
+					\end{equation}
+			\end{itemize}
+		\item Center of mass
+			\begin{itemize}
+				\item $\delta: D \subset \mathbb{R}^2 \rightarrow \mathbb{R}$
+					\begin{equation}
+						\overline{x} = \frac{\iint_D x \delta(x,y) \; dA}{\iint_D \delta(x,y) \; dA} \qquad
+						\overline{y} = \frac{\iint_D y \delta(x,y) \; dA}{\iint_D \delta(x,y) \; dA}
+					\end{equation}
+					\begin{itemize}
+						\item Centroid (constant density)
+							\begin{equation}
+								\overline{x} = \frac{1}{A_D} \iint_D x \; dA = \frac{\iint_D x \; dA}{\iint_D \; dA} \\
+								\overline{y} = \frac{1}{A_D} \iint_D y \; dA = \frac{\iint_D y \; dA}{\iint_D \; dA}
+							\end{equation}
+					\end{itemize}
+				\item $\delta: W \subset \mathbb{R}^3 \rightarrow \mathbb{R}$
+					\begin{equation}
+						\overline{x} = \frac{\iiint_W x \delta(x,y,z) \; dV}{\iiint_W \delta(x,y,z) \; dV} \qquad
+						\overline{y} = \frac{\iiint_W y \delta(x,y,z) \; dV}{\iiint_W \delta(x,y,z) \; dV} \\
+						\overline{z} = \frac{\iiint_W z \delta(x,y,z) \; dV}{\iiint_W \delta(x,y,z) \; dV}
+					\end{equation}
+					\begin{itemize}
+						\item Centroid (constant density)
+						\begin{equation}
+								\overline{x} = \frac{1}{V_W} \iiint_W x \; dV = \frac{\iiint_W x \; dV}{\iiint_W \; dV} \\
+								\overline{y} = \frac{1}{V_W} \iiint_W y \; dV = \frac{\iiint_W y \; dV}{\iiint_W \; dV} \\
+								\overline{z} = \frac{1}{V_W} \iiint_W z \; dV = \frac{\iiint_W z \; dV}{\iiint_W \; dV}
+							\end{equation}
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
