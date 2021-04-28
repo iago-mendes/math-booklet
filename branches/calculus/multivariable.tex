@@ -337,12 +337,16 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 			\end{equation}
 		\item Vector Line Integrals in $\mathbb{R}^n$
 			\begin{equation}
-				\int_{\vector{x}} \vector{F} \dotProduct ds = \int_a^b \vector{F}(\vector{x}) \dotProduct \magnitude{\vector{x}'(t)} \; dt
+				\int_{\vector{x}} \vector{F} \dotProduct d\vector{s} = \int_a^b \vector{F}(\vector{x}) \dotProduct \magnitude{\vector{x}'(t)} \; dt
 			\end{equation}
 			\begin{itemize}
 				\item Differential form
 					\begin{equation}
-						\int_{\vector{x}} \vector{F} \dotProduct ds = \int_{\vector{x}} M \; dx + N \; dy + P \; dz
+						\int_{\vector{x}} \vector{F} \dotProduct d\vector{s} = \int_{\vector{x}} M \; dx + N \; dy + P \; dz
 					\end{equation}
 			\end{itemize}
+		\item Green's Theorem
+			\begin{equation}
+				\oint_C \vector{F} \dotProduct d\vector{s} = \int_{\vector{x}} M \; dx + N \; dy = \iint_D \left( \partialDerivative{N}{x} - \partialDerivative{M}{y} \right) \; dxdy
+			\end{equation}
 	\end{itemize}
