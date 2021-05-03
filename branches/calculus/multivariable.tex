@@ -359,4 +359,27 @@ $f: X \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$
 			\begin{equation}
 				\oint_C \vector{F} \dotProduct \vectorUnit{n} \; ds = \iint_D \nabla \dotProduct \vector{F} \; dA
 			\end{equation}
+		\item Conservative Vector Fields
+			\begin{itemize}
+				\item Path independence
+					\begin{equation}
+						\int_{C_1} \vector{F} \dotProduct d\vector{s} = \int_{C_2} \vector{F} \dotProduct d\vector{s}
+					\end{equation}
+				\item Theorems
+					\begin{enumerate}
+						\item A continuous vector field $\vector{F}$ has path-independent line integrals if and only if
+							\begin{equation}
+								\oint_C \vector{F} \dotProduct d\vector{s} = 0
+							\end{equation}
+							for all simple closed curves $C$.
+						\item Suppose that $\vector{F}$ is continuous on a \textit{connected} region $R \subseteq \mathbb{R}^n$; then,
+							\begin{equation}
+								\vector{F} = \nabla f \ifonly \vector{F} \textrm{ has path-independent line integrals over curves in } R
+							\end{equation}
+						\item Suppose that $\vector{F}$ is of class $C^1$ on a \textit{simply-connected} domain $R$ in $\mathbb{R}^2$ or $\mathbb{R}^3$; then,
+							\begin{equation}
+								\vector{F} = \nabla f \ifonly \nabla \crossProduct \vector{F} = \vector{0}
+							\end{equation}
+					\end{enumerate}
+			\end{itemize}
 	\end{itemize}

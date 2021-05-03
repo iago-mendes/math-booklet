@@ -59,6 +59,11 @@
 	\left| #1 \right|
 }
 
+\newcommand{\ifonly} % if and only if
+{
+	\quad \Leftrightarrow \quad
+}
+
 % vector notations
 
 \renewcommand{\vector}[1] % vector
