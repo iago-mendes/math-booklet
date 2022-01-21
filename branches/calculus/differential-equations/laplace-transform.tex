@@ -1,1 +1,54 @@
 \subsection{Laplace Transform}
+
+\begin{topics}
+	\begin{topic}{Definition}
+		The Laplace transform takes a function $f(t)$ and produces a function $F(s)$.
+		\begin{equation}
+			\laplace{f(t)} = F(s) = \int_0^{\infty} e^{-st} f(t) dt
+		\end{equation}
+	\end{topic}
+
+	\begin{topic}{Linearity}
+		\begin{equation}
+			\laplace{k_1 f(t) + k_2 g(t)} = k_1 \laplace{f(t)} + k_2 \laplace{g(t)}
+		\end{equation}
+	\end{topic}
+
+	\begin{topic}{Examples}
+		\begin{topics}
+			\begin{topic}{$f(t) = 1$}
+				\begin{equation}
+					\laplace{1} = \frac{1}{s},
+				\end{equation}
+				where $s>0$.
+			\end{topic}
+
+			\begin{topic}{$f(t) = t^n$}
+				\begin{equation}
+					\laplace{t^n} = \frac{n!}{s^{n+1}},
+				\end{equation}
+				where $n \in \N$.
+			\end{topic}
+
+			\begin{topic}{$f(t) = e^{at}$}
+				For $s > a$,
+				\begin{equation}
+					\laplace{e^{at}} = \frac{1}{s-a}.
+				\end{equation}
+				For $s \leq a$, $\laplace{e^{at}}$ diverges.
+			\end{topic}
+
+			\begin{topic}{$f(t) = \cos kt$}
+				\begin{equation}
+					\laplace{\cos kt} = \frac{s}{s^2 + k^2}
+				\end{equation}
+			\end{topic}
+
+			\begin{topic}{$f(t) = \sin kt$}
+				\begin{equation}
+					\laplace{\sin kt} = \frac{k}{s^2 + k^2}
+				\end{equation}
+			\end{topic}
+		\end{topics}
+	\end{topic}
+\end{topics}

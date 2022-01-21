@@ -45,7 +45,7 @@
 }
 
 \newenvironment{topic}[1] {
-	\item #1 \\
+	\item #1 \newline
 } {}
 
 % basic notations
@@ -134,5 +134,11 @@
 
 % Laplace Transform
 \newcommand{\laplace}[1] {
-	\mathcal{L} \left\{ #1 \right\}
+	\mathcal{L} \left[ #1 \right]
+}
+
+% Natural numbers
+\newcommand{\N}
+{
+	\mathbb{N}
 }
