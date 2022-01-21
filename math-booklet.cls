@@ -15,11 +15,12 @@
 \RequirePackage{mathrsfs}
 \RequirePackage{enumerate}
 
+% FORMAT
+
 \titleformat{\chapter}[display]
 	{\normalfont\bfseries}{}{0pt}{\Huge}
 
-\newpagestyle{mystyle}
-{
+\newpagestyle{mystyle} {
 	\sethead{\chaptertitle}{}{\thesection~\sectiontitle}
 	\headrule
 
@@ -27,8 +28,7 @@
 }
 \pagestyle{mystyle}
 
-\renewenvironment{equation}
-{
+\renewenvironment{equation} {
 	\begin{equation*}
 	\begin{gathered}
 }
@@ -36,6 +36,17 @@
 	\end{gathered}
 	\end{equation*}
 }
+
+\newenvironment{topics} {
+	\begin{itemize}
+}
+{           
+	\end{itemize}
+}
+
+\newenvironment{topic}[1] {
+	\item #1 \\
+} {}
 
 % basic notations
 
@@ -119,4 +130,9 @@
 \newcommand{\gradient}
 {
 	\nabla
+}
+
+% Laplace Transform
+\newcommand{\laplace}[1] {
+	\mathcal{L} \left\{ #1 \right\}
 }
